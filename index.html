@@ -25,8 +25,8 @@
    <h1>Uvod v programiranje</h1>
    <p>from math import sqrt, sin, pi, /neenakost != / </p>
 
-   <h1>Rekurzija/<h1>
-      <p>def splosni_fibonacci(n, a=0, b=1):</p>
+   <h1>Rekurzija<h1>
+     <p>def splosni_fibonacci(n, a=0, b=1):</p>
          <p>"""Vrne n-ti člen zaporedja a, b, a + b, a + 2 b, …"""</p>
          <p>if n == 0:</p>
              <p>return a</p>
@@ -42,6 +42,36 @@
              <p>else:</p>
                  <p>return gcd(n, m % n)</p>
          
+   <h1>Nizi/<h1>
+   <p> len(niz) vrne dolžino,  str() pretvori stevilko v niz,  in, not in,  niz[i:j:k] i od kje zacnemo, j do kam, k kateri znak.</p>
+   <p> .lower() vse z malimi,  "niz".count("o") prešteje o,</p>   
+   <p>s.count(t) vrne število pojavitev podniza t v nizu s. Klic s.count(t, i) deluje podobno, le da začne šteti šele pri indeksu i, klic s.count(t, i, j) pa konča šteti pri indeksu j.</p>
+
+   <p>s.index(t) vrne najmanjši indeks v nizu s, kjer se niz t pojavi kot podniz. Podobno kot prej klic s.index(t, i) začne iskati pri indeksu i, klic s.index(t, i, j) pa konča pri indeksu j. Če niza ni, metoda sproži napako. Metoda s.find se obnaša enako kot s.index, le da v primeru, ko podniza ne najde, vrne -1.</p>
+
+   <p>s.join(sez) z ločilom s skupaj stakne vse nize iz seznama sez (te bomo spoznali kmalu).</p>
+
+   <p>s.replace(t1, t2) vrne niz s, v katerem smo vse pojavitve podniza t1 zamenjali s podnizi t2. Klic s.replace(t1, t2, n) pa zamenja le prvih n pojavitev.</p>
+
+   <p>s.strip() vrne niz s, v katerem smo odstranili vse bele znake (presledke, tabulatorje, nove vrstice) z začetka in konca. Klic s.strip(t) z začetka in konca odstrani vse znake iz niza t.</p>
+
+   <p>s.lower() / s.upper() / s.title() / s.capitalize() / s.swapcase() vrnejo niz s, v katerem smo vse črke zamenjali z malimi / vse črke zamenjamo z velikimi / vsem besedam damo veliko začetnico / na začetku niza damo veliko začetnico / male črke zamenjamo z velikimi in obratno.</p>
+
+   <p>s.split() vrne seznam besed v nizu s (ločene glede na bele znake). Klic s.split(t) loči glede na podniz t. Klic s.split(t, n) vrne niz razbit na prvih n ločilih.</p>
+
+   <p>s.isdigit() / s.isalpha() / s.islower() / s.isupper() / s.isalnum() / s.isspace() vrnejo True natanko takrat, kadar je niz s neprazen in so vsi znaki števke / črke / male črke / velike črke / črke ali številke / beli znaki.</p>
+
+   <p>kdo = 'Mama'</p> 
+   <p>kaj = 'joj'</p> 
+   <p>f'{kdo} vzklika: "{kaj}, {kaj}, {kaj}!"'</p> 
+   <p>'Mama vzklika: "joj, joj, joj!"'</p> 
    
-</body>
+   
+   
+   
+   
+   
+   
+   
+   </body>
 </html>
