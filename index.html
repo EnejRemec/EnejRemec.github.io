@@ -22,7 +22,29 @@
    </style>
 </head>
 <body>
-   <h1>Naslov polepša stran</h1>
-   <p>Tu lahko kaj napišete, ali pa tudi ne.</p>
+   <h1>Uvod v programiranje</h1>
+   <p>from math import sqrt, sin, pi 
+    neenakost !=
+   </p>
+
+   <h1>Rekurzija/<h1>
+      <p>def splosni_fibonacci(n, a=0, b=1):
+    """Vrne n-ti člen zaporedja a, b, a + b, a + 2 b, …"""
+    if n == 0:
+        return a
+    elif n == 1:
+        return b
+    else:
+        return splosni_fibonacci(n - 1, b, a + b)
+      </p>
+
+      <p>
+         def gcd(m, n):
+    if n == 0:
+        return m
+    else:
+       return gcd(n, m % n)
+      </p>
+   
 </body>
 </html>
